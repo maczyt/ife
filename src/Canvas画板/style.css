@@ -30,7 +30,7 @@ html, body, #app {
   display: flex;
   flex-direction: column;
 }
-canvas {
+.c1 {
   display: block;
   flex: 1;
   overflow: hidden;

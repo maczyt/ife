@@ -111,9 +111,9 @@ const App = () => {
     canvas.current.addEventListener('mousedown', handleMouseDown, false);
     document.addEventListener('mousemove', handleMouseMove, false);
     document.addEventListener('mouseup', handleMouseUp, false);
-    
+      
     return () => {
-      canvas.current.removeEventListener('mousedown', handleMouseDown, false);
+      canvas.current?.removeEventListener('mousedown', handleMouseDown, false);
       document.removeEventListener('mousemove', handleMouseMove, false);
       document.removeEventListener('mouseup', handleMouseUp, false);
     }
@@ -152,7 +152,7 @@ const App = () => {
           <button onClick={handleShowRecorded}>展示画图路径</button>
         </div>
       </header>
-      <canvas ref={canvas}></canvas>
+      <canvas class="c1" ref={canvas}></canvas>
     </div>
   )
 }

@@ -35,4 +35,8 @@ ul {
 
 ul, li {
   line-height: 1.5em;
+  text-transform: uppercase;
+}
+li a {
+  text-decoration: none;
 }
