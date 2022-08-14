@@ -78,6 +78,14 @@ const App = () => {
             i += 2;
           }
 
+          while (newColumns.includes(0)) {
+            newColumns.splice(newColumns.indexOf(0), 1);
+          }
+
+          while (newColumns.length < len) {
+            newColumns.unshift(0)
+          }
+
           newColumns.forEach((v, index) => {
             values.current[index][column] = v;
           })
@@ -106,6 +114,14 @@ const App = () => {
               newColumns[i] = 0;
             }
             i += 2;
+          }
+
+          while (newColumns.includes(0)) {
+            newColumns.splice(newColumns.indexOf(0), 1);
+          }
+
+          while (newColumns.length < len) {
+            newColumns.push(0)
           }
 
           newColumns.forEach((v, index) => {
@@ -138,6 +154,14 @@ const App = () => {
             i += 2;
           }
 
+          while (newColumns.includes(0)) {
+            newColumns.splice(newColumns.indexOf(0), 1);
+          }
+
+          while (newColumns.length < len) {
+            newColumns.push(0)
+          }
+
           newColumns.forEach((v, index) => {
             values.current[row][index] = v;
           })
@@ -166,6 +190,14 @@ const App = () => {
               newColumns[i] *= 2;
             }
             i += 2;
+          }
+
+          while (newColumns.includes(0)) {
+            newColumns.splice(newColumns.indexOf(0), 1);
+          }
+
+          while (newColumns.length < len) {
+            newColumns.unshift(0)
           }
           newColumns.forEach((v, index) => {
             values.current[row][index] = v;
