@@ -74,8 +74,10 @@ const App = () => {
             if (newColumns[i - 1] === newColumns[i]) {
               newColumns[i - 1] = 0;
               newColumns[i] *= 2;
+              i += 2;
+            } else {
+              i ++;
             }
-            i += 2;
           }
 
           while (newColumns.includes(0)) {
@@ -112,8 +114,10 @@ const App = () => {
             if (newColumns[i - 1] === newColumns[i]) {
               newColumns[i - 1] *= 2;
               newColumns[i] = 0;
+              i += 2;
+            } else {
+              i ++;
             }
-            i += 2;
           }
 
           while (newColumns.includes(0)) {
@@ -150,8 +154,10 @@ const App = () => {
             if (newColumns[i - 1] === newColumns[i]) {
               newColumns[i - 1] *= 2;
               newColumns[i] = 0;
+              i += 2;
+            } else {
+              i ++;
             }
-            i += 2;
           }
 
           while (newColumns.includes(0)) {
@@ -188,8 +194,10 @@ const App = () => {
             if (newColumns[i - 1] === newColumns[i]) {
               newColumns[i - 1] = 0;
               newColumns[i] *= 2;
+              i += 2;
+            } else {
+              i ++;
             }
-            i += 2;
           }
 
           while (newColumns.includes(0)) {
